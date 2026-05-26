@@ -1,33 +1,101 @@
-# Bank-Management-System
+# Bank Management System
 
-# SYSTEM SPECIFICATION AT A GLANCE
-AIM:
-This project Bank Management System is the software that can be used by the
-Bank Officials for adding the details of new Customer details, modifying the
-details of current Customers, deleting details of Customers and displaying their
-transactions.
-This project (Front-end) has been developed using Python version 3.8.5. The
-RDBMS (Relational Database Management System) used is MySQL. Thus,
-the entire project is based on Python-MySQL connectivity.
+## Overview
+The **Bank Management System** is a Python-MySQL based application developed for managing banking operations efficiently.  
+It allows bank officials to manage customer accounts and transactions securely.
 
-MODULES:
-● Opening A New Account
-● Closing An Account
-● Modifying Existing Account
-● Displaying all Customer Details
-● Displaying a Customer's Details
-● Depositing The Amount
-● Withdrawing The Amount
-● Displaying Transactions
-● Displaying Balance Amount of all Customers
+- **Front-end:** Python 3.8.5  
+- **Database:** MySQL  
+- **Connectivity:** Python-MySQL Connectivity  
 
-DATABASE:
-This project includes one database i.e., "bama" which has two tables.
-● ‘accounts’ stores all the Account details like Account Number, Customer
-Name, Aadhar Number, Age, Address, Mobile Number, Occupation,
-Email ID, Date Of Birth, Monthly Average Balance, Balance Amount.
-● ‘transaction’ stores Transaction details like Account Number,
-Transaction Amount, Transaction Type and Transaction Date.
-This project also includes the usage of a CSV file “passwords” which has the
-username and the password of the Bank Officials to ensure safe connection to
-the database.
+---
+
+# Features
+
+- Open a New Account
+- Close an Account
+- Modify Existing Account Details
+- Display All Customer Details
+- Display a Specific Customer's Details
+- Deposit Amount
+- Withdraw Amount
+- Display Transactions
+- Display Balance of All Customers
+
+---
+
+# Database
+
+The project uses a database named:
+
+```sql
+bama
+```
+
+## Tables
+
+### 1. `accounts`
+Stores customer account details such as:
+- Account Number
+- Customer Name
+- Aadhar Number
+- Address
+- Mobile Number
+- Email ID
+- Balance Amount
+
+### 2. `transaction`
+Stores transaction details such as:
+- Account Number
+- Transaction Amount
+- Transaction Type
+- Transaction Date
+
+---
+
+# Authentication
+
+A CSV file named:
+
+```text
+passwords.csv
+```
+
+is used to store usernames and passwords of bank officials for secure login access.
+
+---
+
+# Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python 3.8.5 | Application Development |
+| MySQL | Database Management |
+| CSV | Login Authentication |
+
+---
+
+# How To Run
+
+## Step 1
+Install Python and MySQL.
+
+## Step 2
+Create the database:
+
+```sql
+CREATE DATABASE bama;
+```
+
+## Step 3
+Run the project:
+
+```bash
+python main.py
+```
+
+---
+
+# Conclusion
+
+This project provides a simple banking management solution using Python and MySQL for handling customer accounts and transactions efficiently.
